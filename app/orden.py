@@ -13,6 +13,4 @@ class Orden():
     def computers(self):
         return self._computers
     def getTotalPrice(self):
-        listAux=list(reduce(lambda x,y: x+y,self.computers))
-        return listAux
-        
+        print(self._computers)
