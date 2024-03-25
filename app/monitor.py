@@ -31,3 +31,4 @@ class Monitor():
     def __checkTypes(self, mark: str, sizeComputer: float):
         return True if isinstance(mark, str) and isinstance(sizeComputer, float) else False    
 
+    print(monitor1)
