@@ -23,6 +23,3 @@ class Raton(DispositivoEntrada):
 
 
 
-if __name__ == "__main__":
-    raton = Raton("usb","hp")
-    print(raton)
