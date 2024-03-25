@@ -18,7 +18,7 @@ class Computer:
             raise TypeError("monitor, raton, teclado, price and name must be Monitor, Raton, Teclado, int and str")
         self._price=price
         self._name=name
-    def __checkTypes(self,monitor,raton,teclado):
+    def __checkTypes(monitor,raton,teclado):
         return True if isinstance(monitor, Monitor) and isinstance(raton, Raton) and isinstance(teclado, Teclado) else False
     def __str__(self) -> str:
         return f"id: {str(self.id)} monitor: {str(self.monitor)} raton: {str(self.raton)} teclado: {str(self.teclado)} price: {str(self.price)} name: {self.name}"
@@ -56,11 +56,4 @@ class Computer:
     def teclado(self,teclado):
         self._teclado=teclado
 
-if __name__=="__main__":
-    monitor1=Monitor("hp",15.5)
-    teclado1=Teclado("usb","hp")
-    raton1=Raton("usb","hp")
-    computer1=Computer(monitor1,raton1,teclado1,1000,"hp")
-    print(computer1)
-    
         
