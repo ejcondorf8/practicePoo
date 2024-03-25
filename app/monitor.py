@@ -31,6 +31,3 @@ class Monitor():
     def __checkTypes(self, mark: str, sizeComputer: float):
         return True if isinstance(mark, str) and isinstance(sizeComputer, float) else False    
 
-if __name__=="__main__":
-    monitor1=Monitor("hp",15.5)
-    print(monitor1)
