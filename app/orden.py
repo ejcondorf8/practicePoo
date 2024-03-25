@@ -6,7 +6,7 @@ class Orden():
     def nextVal(cls):
         cls.countOrden += 1
         return cls.countOrden
-    def __init__(self,computers:Computer) -> None:
+    def __init__(self,computers:Computer=[]) -> None:
         self._id=Orden.nextVal()
         self._computers=list(computers)
     @property
