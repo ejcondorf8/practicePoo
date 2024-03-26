@@ -17,7 +17,6 @@ class Orden():
         return self._computers
     def getTotalPrice(self):
         listAux= [computer.price for computer in self._computers]
-        print(listAux)
         return reduce(lambda a,b:a+b,listAux)
     
     def addComputer(self,computer:Computer):

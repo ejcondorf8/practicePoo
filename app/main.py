@@ -42,6 +42,7 @@ def captureComputer():
     return Computer(monitor,raton,teclado,price,name)
 
 def main():
+    orden=Orden()   
     while True:
         showMenu()
         try:
@@ -54,10 +55,9 @@ def main():
                 print(f'El total de la orden es de {totalAmount:.2f}')
                 break
             else:
-                orden=Orden()
                 computer=captureComputer()
-                computers=list([computer])
-                orden=Orden(computers)
+                orden.addComputer(computer)
+               
         
 if __name__=='__main__':
     main()
